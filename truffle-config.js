@@ -23,6 +23,7 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+var DefaultBuilder = require("truffle-default-builder");
 
 module.exports = {
   /**
@@ -73,6 +74,12 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
+     build: new DefaultBuilder({
+      "index.html": "index.html",
+      "app.js": [
+         "js/index.js"
+      ]
+}),
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
