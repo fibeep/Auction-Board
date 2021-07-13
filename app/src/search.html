@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -39,21 +38,25 @@
     </nav>
     
     <main>
-        <h5>new message.</h5>
-        <form id="message-form" class="mt-4">
-            <div class="form-group" style="width: 300px;">
-                <label for="address" class="mb-1">address.</label>
-                <input type="text" class="form-control bg-transparent" id="to" placeholder="0xA0B3B583B2B233432B43">
-            </div>
-            <div class="form-group mt-3">
-                <label for="message" class="mb-1">message.</label>
-                <textarea class="form-control bg-transparent" id="message" rows="10"></textarea>
+        <form class="mt-4 search">
+            <div class="form-group me-5" style="width: 518px;">
+                <label for="address" class="mb-1">enter your address to find your messages.</label>
+                <input type="text" class="form-control bg-transparent" id="address" placeholder="0xA0B3B583B2B233432B43">
             </div>
             <div class="send d-flex justify-content-center mt-4">
-                <p id="status"></p>
-                <button class="btn text-white" type="submit">send.</button>
+                <button class="btn text-white">send.</button>
             </div>
         </form>
+        <div class="result">
+          <div class="message">
+            <h6>0xA0B3B583B2B233432B43 | Tuesday, July 11th 2021 - 11:36:43</h6>
+            <p>Bitcoin Cash broadcast lots of immutable bagholder! Tether proves few permissioned ledger of some fish. When it rejoins lots of reinvested REKT during a fish, Binance Coin cost many ERC721</p>
+          </div>
+          <div class="message">
+            <h6>0xA0B3B583B2B233432B43 | Tuesday, July 11th 2021 - 11:36:43</h6>
+            <p>Bitcoin Cash broadcast lots of immutable bagholder! Tether proves few permissioned ledger of some fish. When it rejoins lots of reinvested REKT during a fish, Binance Coin cost many ERC721</p>
+          </div>
+        </div>
     </main>
 
     <!-- Bootstrap 5 -->
@@ -65,6 +68,8 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Compiled using Webpack -->
     <script src="index.js"></script>
+    <!-- Result of truffle build -->
+    <script src="/app.js"></script>
 </body>
 
 </html>
