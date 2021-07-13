@@ -43,8 +43,8 @@ const App = {
 
     // Configure the uploader.
     const uploadMetadata = {
-      apiKey: "KlBFeA+IOCSibbOtRjqN9Q==",
-      apiSecret: "k3X0fEIDpMiOw6y2x6OayqJXOvxnr4eT29Gwfb6IG0M=",
+      apiKey: "oiTggCSpEQwIs0b+YM6prQ==",
+      apiSecret: "YO0RLnKxpOb6lsE1j1a6ALgXdmflPXLqhj2NnVYlDIM=",
       key: `metadata/${metadata.timestamp}.json`,
       data: JSON.stringify(metadata),
     };

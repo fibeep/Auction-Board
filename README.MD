@@ -4,7 +4,7 @@
 
 ## Contract Address
 
-`0x2f0ee6c763bdF4ac266bd8C118E54C32b8CDdFf7
+`0x705fC4fC84aFA99fAF2b42b6C3B7e1D9A64f1CD6`
 
 ## Technology Stack
 
