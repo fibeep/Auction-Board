@@ -1,6 +1,6 @@
 body{
     min-width: 100vh;
-    background: url('./background.png');
+    background: url('background.png');
     font-family: Inconsolata;
     color: #fff;
     background-size: cover;
