@@ -3,6 +3,8 @@ body{
   background: url('./background.png');
   font-family: Inconsolata;
   color: #fff;
+  background-size: cover;
+  outline: none !important;
 }
 
 a{
@@ -47,4 +49,16 @@ form .btn:before {
   left: 5px;
   bottom: -10px;
   border: 3px solid #fff;
+}
+
+input {
+  color: white !important;
+}
+
+form, .form-control, input:focus, input:focus-visible, input::before, input::after {
+  outline: none !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
