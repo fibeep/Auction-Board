@@ -10,3 +10,7 @@
 
 ## How to Use
   
+## Release Schedule
+
+MVP  - July 13th 2021
+Patch Update  - July 14th 2021

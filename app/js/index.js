@@ -1,5 +1,5 @@
 import Web3 from "web3";
-import messageArtifact from "../../build/contracts/messageContract.json";
+import messageArtifact from "../../build/contracts/MessageContract.json";
 import fleek from "@fleekhq/fleek-storage-js";
 
 // Credit: https://github.com/truffle-box/webpack-box/blob/master/app/src/index.js

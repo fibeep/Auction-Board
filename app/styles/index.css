@@ -57,8 +57,8 @@ input, textarea {
   color: white !important;
 }
 
-form, .form-control, input, textarea, input:focus, input:focus-visible, input::before, input::after {
-  outline: none !important;
+form, .form-control, .form-contol:focus,  input, textarea, input:active, textarea:active, input:focus, input:focus-visible, input::before, input::after {
+  outline: none;
 }
 
 input::placeholder, textarea::placeholder {
