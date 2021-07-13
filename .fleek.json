@@ -1,0 +1,14 @@
+{
+  "site": {
+    "id": "272c8cbe-1e3b-47c2-8717-320186729584",
+    "team": "hefoyir825-team",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "small-smoke-0710"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "dist",
+    "rootDir": ""
+  }
+}

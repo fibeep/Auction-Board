@@ -42,14 +42,15 @@
         <form id="message-form" class="mt-4">
             <div class="form-group" style="width: 300px;">
                 <label for="address" class="mb-1">address.</label>
-                <input type="text" class="form-control bg-transparent" id="address" placeholder="0xA0B3B583B2B233432B43">
+                <input type="text" class="form-control bg-transparent" id="to" placeholder="0xA0B3B583B2B233432B43">
             </div>
             <div class="form-group mt-3">
                 <label for="message" class="mb-1">message.</label>
                 <textarea class="form-control bg-transparent" id="message" rows="10"></textarea>
             </div>
             <div class="send d-flex justify-content-center mt-4">
-                <button class="btn text-white">send.</button>
+                <p id="status"></p>
+                <button class="btn text-white" type="submit">send.</button>
             </div>
         </form>
     </main>
