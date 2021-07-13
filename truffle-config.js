@@ -55,8 +55,18 @@ module.exports = {
 
     build: new DefaultBuilder({
       "index.html": "index.html",
-      "app.js" : [
+      "search.html": "search.html",
+      "index.js" : [
         "js/index.js"
+      ],
+      "index.css": [
+        "styles/index.css",
+        "styles/search.css",
+      ],
+      "img/": [
+        "styles/background.png",
+        "styles/Logo.svg",
+        "img/"
       ]
     }),
   },
