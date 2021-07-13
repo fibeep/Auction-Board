@@ -29,6 +29,8 @@ form{
 .form-control{
   border-radius: 0;
   border:3px solid #fff;
+  color: white !important;
+  outline: none !important;
 }
 
 form .btn{
@@ -51,14 +53,14 @@ form .btn:before {
   border: 3px solid #fff;
 }
 
-input {
+input, textarea {
   color: white !important;
 }
 
-form, .form-control, input:focus, input:focus-visible, input::before, input::after {
+form, .form-control, input, textarea, input:focus, input:focus-visible, input::before, input::after {
   outline: none !important;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: rgba(255, 255, 255, 0.7) !important;
 }
