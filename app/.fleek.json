@@ -1,0 +1,14 @@
+{
+  "site": {
+    "id": "8e67e6c6-69e3-4e1c-9d6f-5b125246c4be",
+    "team": "hefoyir825-team",
+    "platform": "ipfs",
+    "source": "ipfs",
+    "name": "wispy-math-7697"
+  },
+  "build": {
+    "baseDir": "",
+    "publicDir": "dist",
+    "rootDir": ""
+  }
+}
