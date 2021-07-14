@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <title>Paper Trail</title>
+</head>
+
+<body>
+<!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent mx-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="Logo.svg" alt="" height="50px" class="d-inline-block align-text-top">
+            </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-5">
+                    <a class="nav-link text-white" aria-current="page" href="./search.html">my message.</a>
+                    </li>
+                    <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="./index.html">new message.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <h5>new message.</h5>
+        <form id="message-form" class="mt-4">
+            <div class="form-group" style="width: 300px;">
+                <label for="address" class="mb-1">address.</label>
+                <input type="text" class="form-control bg-transparent" id="to" placeholder="0xA0B3B583B2B233432B43">
+            </div>
+            <div class="form-group mt-3">
+                <label for="message" class="mb-1">message.</label>
+                <textarea class="form-control bg-transparent" id="message" rows="10"></textarea>
+            </div>
+            <div class="send d-flex justify-content-center mt-4">
+                <p id="status"></p>
+                <button class="btn text-white" type="submit">send.</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled using Webpack -->
+    <script src="index.js"></script>
+</body>
+
+</html>

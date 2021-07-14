@@ -1,5 +1,5 @@
 import Web3 from "web3";
-import messageArtifact from "../../build/contracts/messageContract.json";
+import messageArtifact from "../../build/contracts/MessageContract.json";
 import fleek from "@fleekhq/fleek-storage-js";
 
 // Credit: https://github.com/truffle-box/webpack-box/blob/master/app/src/index.js
@@ -31,11 +31,12 @@ const App = {
     }
   },
 
-  storeMetadata: async function (name, to, message) {
+  storeMetadata: async function (to, message) {
     // Build the metadata.
+    const fromAddress = 0x00
     var metadata = {
       name: "Paper Trail",
-      description: `message from ${name}`,
+      description: `message from ${fromAddress}`,
       to: to,
       message: message,
       timestamp: new Date().toISOString(),
@@ -43,8 +44,8 @@ const App = {
 
     // Configure the uploader.
     const uploadMetadata = {
-      apiKey: "KlBFeA+IOCSibbOtRjqN9Q==",
-      apiSecret: "k3X0fEIDpMiOw6y2x6OayqJXOvxnr4eT29Gwfb6IG0M=",
+      apiKey: "oiTggCSpEQwIs0b+YM6prQ==",
+      apiSecret: "YO0RLnKxpOb6lsE1j1a6ALgXdmflPXLqhj2NnVYlDIM=",
       key: `metadata/${metadata.timestamp}.json`,
       data: JSON.stringify(metadata),
     };
@@ -82,6 +83,7 @@ window.App = App;
 
 // When all the HTML is loaded, run the code in the callback below.
 $(document).ready(function () {
+  console.log("hello")
   // Detect Web3 provider.
   if (window.ethereum) {
     // use MetaMask's provider
@@ -105,10 +107,10 @@ $(document).ready(function () {
     e.preventDefault();
 
     // Capture form data and create metadata from the submission.
-    const name = $("#from").val();
+    // const name = $("#from").val();
     const to = $("#to").val();
     const message = $("#message").val();
 
-    window.App.storeMetadata(name, to, message);
+    window.App.storeMetadata(to, message);
   });
 });
