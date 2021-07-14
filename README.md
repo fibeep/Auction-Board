@@ -41,5 +41,9 @@ Below are the instructions to set up and start the program on your local machine
 
 ## Release Schedule
 
-MVP  - July 13th 2021
-Patch Update  - July 14th 2021
+MVP
+> July 13th 2021
+
+
+Patch Update
+> July 14th 2021
